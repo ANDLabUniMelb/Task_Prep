@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>AND Questionnaires</title>
+        <script src='jspsych/jspsych.js'></script>
+        <script src='jspsych/plugins/jspsych-html-keyboard-response.js'></script>
+        <script src='jspsych/plugins/jspsych-html-button-response.js'></script>
+        <script src="jspsych/plugins/jspsych-call-function.js"></script>
+        <script src='jspsych/plugins/jspsych-survey-text.js'></script>
+        <script src='jspsych/plugins/jspsych-survey-multi-select.js'></script>
+        <script src='jspsych/plugins/jspsych-survey-multi-choice.js'></script>
+        <script src='jspsych/plugins/jspsych-survey-select.js'></script>
+        <script src='jspsych/plugins/jspsych-survey-likert.js'></script>
+        <script src='jspsych/plugins/jspsych-instructions.js'></script>
+        <script src='jspsych/plugins/jspsych-pavlovia-3.0.0.js'></script>
+        <script src='jspsych/plugins/jquery-3.5.1.js'></script>
+
+        <script src='other_blocks/consent_block.js'></script>
+        <script src='other_blocks/1. demographics_block.js'></script>
+        <script src='other_blocks/2a. DASSY_likert_block.js'></script>
+        <script src='other_blocks/2b. DASS21_likert_block.js'></script>
+        <script src='other_blocks/3a. STAI_likert_block.js'></script>
+        <script src='other_blocks/3b. STAIY_likert_block.js'></script>
+        <script src='other_blocks/4. IU_likert_block.js'></script>
+        <script src='other_blocks/5. BISBAS_likert_block.js'></script>
+        <script src='other_blocks/6. AFML_likert_block.js'></script>
+        <script src='other_blocks/7. ERQ_likert_block.js'></script>
+        <script src='other_blocks/8. DERS_likert_block.js'></script>
+        <script src='other_blocks/9a. SCARED_likert_block.js'></script>
+        <script src='other_blocks/9b. SCAARED_likert_block.js'></script>
+        <script src='other_blocks/10. PSQI_likert_block.js'></script>
+        <script src='other_blocks/11. PANASSF_likert_block.js'></script>
+        <script src='other_blocks/12. PTQ_likert_block.js'></script>
+        <script src='other_blocks/13. PSS_likert_block.js'></script>
+        <script src='other_blocks/14. SC_likert_block.js'></script>
+        <script src='other_blocks/15. GSE_likert_block.js'></script>
+        <script src='other_blocks/16a. SSPDB_likert_block.js'></script>
+        <script src='other_blocks/16b. SSPDG_likert_block.js'></script>
+        <script src='other_blocks/completion_block.js'></script>
+
+        <link href='jspsych/jspsych.css' rel='stylesheet' type='text/css'/>
+        <link href='jspsych/classes.css' rel='stylesheet' type='text/css'/>
+    </head>
+    <body></body>
+
+    <script>
+    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+        alert("Sorry, this experiment does not work on mobile devices");
+        document.innerHTML = "";
+    }
+
+    // var pavlovia_init = {
+    //     type: "pavlovia",
+    //     command: "init"
+    // };
+
+    var pavlovia_finish = {
+        type: "pavlovia",
+        command: "finish"
+    };
+
+    var timeline = [
+        // pavlovia_init,
+        consent_block,
+        demographics_block,
+        // pavlovia_finish,
+    ];
+
+    jsPsych.init({
+        timeline: timeline,
+        show_progress_bar: true,
+        auto_update_progress_bar: false,
+        on_finish: function() {
+              jsPsych.data.get();
+            //jsPsych.data.get().localSave('csv','protect_data_reward.csv');
+        }
+    });
+
+    </script>
+</html>
+
+
+
