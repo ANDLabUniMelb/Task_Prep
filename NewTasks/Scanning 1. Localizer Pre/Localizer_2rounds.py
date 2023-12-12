@@ -539,7 +539,7 @@ for thisFull_Loop in Full_Loop:
                 exec('{} = thisWeapon_loop[paramName]'.format(paramName))
         
         # set up handler to look after randomisation of conditions etc
-        Weapon_img_loop = data.TrialHandler(nReps=4.0, method='random', 
+        Weapon_img_loop = data.TrialHandler(nReps=2.0, method='random', 
             extraInfo=expInfo, originPath=-1,
             trialList=data.importConditions('Localizer.xlsx'),
             seed=None, name='Weapon_img_loop')
@@ -795,7 +795,7 @@ for thisFull_Loop in Full_Loop:
                 exec('{} = thisAnimal_loop[paramName]'.format(paramName))
         
         # set up handler to look after randomisation of conditions etc
-        Animal_img_loop = data.TrialHandler(nReps=4.0, method='random', 
+        Animal_img_loop = data.TrialHandler(nReps=2.0, method='random', 
             extraInfo=expInfo, originPath=-1,
             trialList=data.importConditions('Localizer.xlsx'),
             seed=None, name='Animal_img_loop')
