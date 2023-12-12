@@ -8,7 +8,7 @@ var prompt = {
 var scale = [
     "Almost never (0-10%)",
     "Sometimes (11-35%)",
-    "About half the time (36-65%)",
+    "About half of the time (36-65%)",
     "Most of the time (66-90%)",
     "Almost always (91-100%)"
 ];

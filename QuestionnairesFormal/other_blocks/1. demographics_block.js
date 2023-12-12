@@ -245,18 +245,16 @@ on_finish: function(data){
             SC_block, //14
             GSE_block, //15
         ]
-
-    }
-
-    if (sex === 'Female') {
-        newTimeline.push(SSPDG_block); // 16b girls
-
-    } else {
-        newTimeline.push(SSPDB_block); // 16a boys
+        if (sex === 'Female') {
+            newTimeline.push(SSPDG_block); // 16b girls
+    
+        } else {
+            newTimeline.push(SSPDB_block); // 16a boys
+        }
     }
     newTimeline.push(completion_block);
     jsPsych.addNodeToEndOfTimeline({timeline: newTimeline});
-        
+       
 }
 };
 
@@ -290,10 +288,10 @@ var conditionalBlock = {
 var demographics_block = {
 	timeline: [prompt, demographics1, demographics2, demographics3, conditionalBlock],
     randomize_order: false,
-    on_finish: function(data){
+    // on_finish: function(data){
         
 
-        // update timeline
-        // jsPsych.addNodeToEndOfTimeline({ timeline: newTimeline });
-    }
+    //     // update timeline
+    //     // jsPsych.addNodeToEndOfTimeline({ timeline: newTimeline });
+    // }
 }

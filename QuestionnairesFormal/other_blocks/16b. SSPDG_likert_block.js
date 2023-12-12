@@ -2,7 +2,9 @@ var prompt = {
 	type: 'html-button-response',
 	stimulus: '<p style="text-align:center; font-size:24px"><b>SSPDG</b>' +
 	'<p style="text-align:center; font-size:24px"> The next questions are about changes that may be happening to your body.</p>' +
-		'<p style="text-align:center; font-size:24px"> These changes normally happen to different young people at different ages.</p>',
+	'<p style="text-align:center; font-size:24px"> These changes normally happen to different young people at different ages.</p>'+
+	'<p style="text-align:center; font-size:24px"> For each question, please choose the answer that best describes what is happening to you.</p>',
+
 		choices: ['Continue']
 };
 
@@ -36,7 +38,7 @@ var questions = [
     	"Skin changes seem completed",
 	]},
 
-	{prompt: '<p style="text-align:center; font-size:24px">Have your breasts have begun to grow?</p>',
+	{prompt: '<p style="text-align:center; font-size:24px">Have your breasts begun to grow?</p>',
 	name: 'SDPPG4',
 	labels: [
 		"Not yet started growing",

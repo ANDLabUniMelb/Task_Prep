@@ -2,7 +2,8 @@ var prompt = {
 	type: 'html-button-response',
 	stimulus: '<p style="text-align:center; font-size:24px"><b>SSPDB</b>' +
 	'<p style="text-align:center; font-size:24px"> The next questions are about changes that may be happening to your body.</p>' +
-		'<p style="text-align:center; font-size:24px"> These changes normally happen to different young people at different ages.</p>',
+		'<p style="text-align:center; font-size:24px"> These changes normally happen to different young people at different ages.</p>'+
+		'<p style="text-align:center; font-size:24px"> For each question, please choose the answer that best describes what is happening to you.</p>',
 		choices: ['Continue']
 };
 
@@ -39,7 +40,7 @@ var questions = [
 	{prompt: '<p style="text-align:center; font-size:24px">Have you noticed a deepening of your voice?</p>',
 	name: 'SDPPB4',
 	labels: [
-		"Not yet started showing changes",
+		"Not yet started changing",
     	"Have barely started changing",
     	"Voice change is definitely underway",
     	"Voice change seems completed",

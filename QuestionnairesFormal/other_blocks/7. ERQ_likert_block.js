@@ -1,18 +1,24 @@
 var prompt = {
 	type: 'html-button-response',
 	stimulus:'<p style="text-align:center; font-size:24px"><b>ERQ</b>' +
-	'<p style="text-align:center; font-size:24px">For each item, indicate how much you agree or disagree by clicking your response.</p>',
+	'<p style="text-align:center; font-size:24px">We would like to ask you some questions about your emotional life, in particular, how you control (that is, regulate and manage) your emotions.</p>'+
+	'<p style="text-align:center; font-size:24px">The questions below involve two distinct aspects of your emotional life.</p>'+
+	'<p style="text-align:center; font-size:24px">One is your emotional experience, or what you feel like inside.</p>'+
+	'<p style="text-align:center; font-size:24px">The other is your emotional expression, or how you show your emotions in the way you talk, gesture, or behave.</p>'+
+	'<p style="text-align:center; font-size:24px">Although some of the following questions may seem similar to one another, they differ in important ways.</p>'+
+	'<p style="text-align:center; font-size:24px">For each item, please answer using a 7-point Likert-scale ranging from "Strongly disagree" to "Strongly agree".</p>',
+
 	choices: ['Continue']
 };
 
 var scale = [
-	"Strongly Disagree",
+	"Strongly disagree",
 	"Disagree",
-	"Slightly Disagree",
+	"Slightly disagree",
 	"Neutral",
-	"Slightly Agree",
+	"Slightly agree",
 	"Agree",
-	"Strongly Agree"
+	"Strongly agree"
 ];
 
 var questions = [
@@ -44,7 +50,7 @@ var questions = [
 	name: 'ERQ7',
 	labels: scale},
 
-	{prompt: '<p style="text-align:center; font-size:24px">I control my emotions by changing the way I think about the situation Iam in.</p>',
+	{prompt: '<p style="text-align:center; font-size:24px">I control my emotions by changing the way I think about the situation I am in.</p>',
 	name: 'ERQ8',
 	labels: scale},
 

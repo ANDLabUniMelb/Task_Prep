@@ -4,7 +4,7 @@ var prompt = {
 	'<p style="text-align:center; font-size:24px">A number of statements which people have used to describe themselves are given below.</p>' +
 	'<p style="text-align:center; font-size:24px">Read each statement and choose an answer to indicate how you <b> generally </b> feel.</p>' +
 	'<p style="text-align:center; font-size:24px">There are no right or wrong answers.</p>' + 
-	'<p style="text-align:center; font-size:24px">Do not spend too much time on any one statement. </p>',
+	'<p style="text-align:center; font-size:24px">Do not spend too much time on any one statement, but give the answer which seems to describe how you generally feel.</p>',
 	choices: ['Continue'] 
 };
 

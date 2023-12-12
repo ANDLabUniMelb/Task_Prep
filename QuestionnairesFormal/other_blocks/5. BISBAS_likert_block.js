@@ -1,10 +1,10 @@
 var prompt = {
 	type: 'html-button-response',
 	stimulus:'<p style="text-align:center; font-size:24px"><b>BISBAS</b>' +
-	'<p style="text-align:center; font-size:24px"> The following are statements that a person may either agree with or disagree with.</p>' +
+	'<p style="text-align:center; font-size:24px"> Each item of this questionnaire is a statement that a person may either agree with or disagree with.</p>' +
 		'<p style="text-align:center; font-size:24px">For each item, indicate how much you agree or disagree with what the item says. </p>' +
 		'<p style="text-align:center; font-size:24px">Please be as accurate and honest as you can be. </p>' +
-		'<p style="text-align:center; font-size:24px">Do not worry about being "consistent" in your responses. </p>',
+		'<p style="text-align:center; font-size:24px">Respond to each item as if it were the only item. That is, don\'t worry about being "consistent" in your responses. </p>',
 		choices: ['Continue']
 };
 
@@ -76,7 +76,7 @@ var questions = [
 	name: 'BISBAS15', 
 	labels: scale},
 
-	{prompt: '<p style="text-align:center; font-size:24px">If I think something unpleasant is going to happen, I usually get pretty worked up.',
+	{prompt: '<p style="text-align:center; font-size:24px">If I think something unpleasant is going to happen, I usually get pretty "worked up".',
 	name: 'BISBAS16', 
 	labels: scale},
 
@@ -96,7 +96,7 @@ var questions = [
 	name: 'BISBAS20', 
 	labels: scale},
 
-	{prompt: '<p style="text-align:center; font-size:24px">When I go after something, I use a no holds barred approach.',
+	{prompt: '<p style="text-align:center; font-size:24px">When I go after something, I use a "no holds barred" approach.',
 	name: 'BISBAS21', 
 	labels: scale},
 

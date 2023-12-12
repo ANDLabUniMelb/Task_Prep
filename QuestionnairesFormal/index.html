@@ -15,7 +15,7 @@
         <script src='jspsych/plugins/jspsych-pavlovia-3.0.0.js'></script>
         <script src='jspsych/plugins/jquery-3.5.1.js'></script>
 
-        <script src='other_blocks/consent_block.js'></script>
+        <script src='other_blocks/0. consent_block.js'></script>
         <script src='other_blocks/1. demographics_block.js'></script>
         <script src='other_blocks/2a. DASSY_likert_block.js'></script>
         <script src='other_blocks/2b. DASS21_likert_block.js'></script>
@@ -36,7 +36,7 @@
         <script src='other_blocks/15. GSE_likert_block.js'></script>
         <script src='other_blocks/16a. SSPDB_likert_block.js'></script>
         <script src='other_blocks/16b. SSPDG_likert_block.js'></script>
-        <script src='other_blocks/completion_block.js'></script>
+        <script src='other_blocks/17. completion_block.js'></script>
 
         <link href='jspsych/jspsych.css' rel='stylesheet' type='text/css'/>
         <link href='jspsych/classes.css' rel='stylesheet' type='text/css'/>
@@ -68,7 +68,7 @@
 
     jsPsych.init({
         timeline: timeline,
-        show_progress_bar: true,
+        show_progress_bar: false,
         auto_update_progress_bar: false,
         on_finish: function() {
               jsPsych.data.get();

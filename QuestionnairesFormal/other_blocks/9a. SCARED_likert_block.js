@@ -1,7 +1,9 @@
 var prompt = {
     type: 'html-button-response',
     stimulus: '<p style="text-align:center; font-size:24px"><b>SCARED</b>' +
-    '<p style="text-align:center; font-size:24px">For each sentence, please choose the response that seems to describe you most <b> for the last 3 months</b>.</p>',
+    '<p style="text-align:center; font-size:24px">Below is a list of sentences that describe how people feel.</p>'+
+    '<p style="text-align:center; font-size:24px">Read each phase and decide if it is "Not true or hardly ever true" or "Somewhat true or sometimes true" or "Very true or often true" for you.</p>'+
+    '<p style="text-align:center; font-size:24px">For each sentence, please choose the answer that corresponds to the response that seems to describe you <b>for the last 3 months</b>.</p>',
     choices: ['Continue']
 };
 

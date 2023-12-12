@@ -2,7 +2,7 @@ var prompt = {
 	type: 'html-button-response',
 	stimulus: '<p style="text-align:center; font-size:24px"><b>PSQI</b>' +
     '<p style="text-align:center; font-size:24px"> The following questions relate to your usual sleep habits during <b> the past month only</b>.</p>' +
-		'<p style="text-align:center; font-size:24px"> Your answers should indicate the most accurate reply for the majority of days and nights.</p>',
+		'<p style="text-align:center; font-size:24px"> Your answers should indicate the most accurate reply for the majority of days and nights in the past month.</p>',
 		choices: ['Continue']
 };
 
@@ -217,7 +217,7 @@ var PSQIOptional = {
 	conditional_function: function() {
 	  var lastResponse = jsPsych.data.get().filter({trial_type: 'survey-likert'}).last(1).values()[0].responses;
 	  var menstruationResponse = JSON.parse(lastResponse)['PSQI14'];
-	  if (menstruationResponse === 2 || menstruationResponse === 3) {
+	  if (menstruationResponse === 1 ||menstruationResponse === 2 || menstruationResponse === 3) {
 		return true;
 	  } else {
 		return false;

@@ -1,16 +1,16 @@
 var prompt = {
 	type: 'html-button-response',
 	stimulus: '<p style="text-align:center; font-size:24px"><b>AFML</b>' +
-	'<p style="text-align:center; font-size:24px">Rate each item on a 5-point Likert-scale ranging from 1 (Strongly Disagree) to 5 (Strongly Agree).</p>',
+	'<p style="text-align:center; font-size:24px">Rate each item on a 5-point Likert-scale ranging from "Strongly disagree" to "Strongly agree".</p>',
 	choices: ['Continue']
 };
 
 var scale = [
-	"Strongly Disagree",
+	"Strongly disagree",
 	"Disagree",
 	"Neutral",
 	"Agree",
-	"Strongly Agree"
+	"Strongly agree"
 ];
 
 var questions = [

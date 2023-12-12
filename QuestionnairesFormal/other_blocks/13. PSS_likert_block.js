@@ -1,9 +1,13 @@
 var prompt = {
 	type: 'html-button-response',
 	stimulus: '<p style="text-align:center; font-size:24px"><b>PSS</b>' +
-	'<p style="text-align:center; font-size:24px">The questions in this scale ask about your feelings and thoughts.' +
-		'<p style="text-align:center; font-size:24px"> Please indicate how often you felt or thought a certain way <b> during the last month</b>.</p>',
-		choices: ['Continue']
+	'<p style="text-align:center; font-size:24px">The questions in this scale ask about your feelings and thoughts <b>during the last month</b>.</p>' +
+	'<p style="text-align:center; font-size:24px">You will be asked to indicate how often you felt or thought a certain way.</p>' +
+	'<p style="text-align:center; font-size:24px">Although some of the questions are similar, there are differences between them and you should treat each one as a separate question.</p>' +
+	'<p style="text-align:center; font-size:24px">The best approach is to answer fairly quickly.</p>' +
+	'<p style="text-align:center; font-size:24px">That is, don\'t try to count up the number of times you felt a particular way; rather indicate the alternative that seems like a reasonable estimate.</p>',
+
+	choices: ['Continue']
 };
 
 var scale = [
