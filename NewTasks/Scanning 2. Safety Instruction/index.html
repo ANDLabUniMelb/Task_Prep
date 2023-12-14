@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Weapon Animal fMRI</title>
+        <script src='jspsych/jspsych.js'></script>
+        <script src='jspsych/plugins/jspsych-html-keyboard-response.js'></script>
+        <script src='jspsych/plugins/jspsych-image-keyboard-response.js'></script>
+        <script src='jspsych/plugins/jspsych-html-button-response.js'></script>
+        <script src="jspsych/plugins/jspsych-call-function.js"></script>
+        <script src='jspsych/plugins/jspsych-survey-text.js'></script>
+        <script src='jspsych/plugins/jspsych-survey-multi-select.js'></script>
+        <script src='jspsych/plugins/jspsych-survey-multi-choice.js'></script>
+        <script src='jspsych/plugins/jspsych-survey-likert.js'></script>
+        <script src='jspsych/plugins/jspsych-instructions.js'></script>
+        <script src='jspsych/plugins/jspsych-pavlovia-3.0.0.js'></script>
+        <script src='jspsych/plugins/jquery-3.5.1.js'></script>
+
+        <script src='jspsych/task_values.js'></script>
+
+        <script src='other_blocks/demographics_block.js'></script>
+        <script src='other_blocks/welcome_block.js'></script>
+        <script src='other_blocks/instructions_block.js'></script>
+        <script src='other_blocks/completion_block.js'></script>
+
+        <link href='jspsych/jspsych.css' rel='stylesheet' type='text/css'/>
+        <link href='jspsych/classes.css' rel='stylesheet' type='text/css'/>
+    </head>
+    <body></body>
+
+    <script>
+
+      if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+          alert("Sorry, this experiment does not work on mobile devices");
+          document.innerHTML = "";
+      }
+
+      var reset_bg = {
+  		type: 'call-function',
+  		func: function() {
+  			document.body.style.backgroundColor = 'white';
+  		}
+  	};
+
+      var pavlovia_init = {
+          type: "pavlovia",
+          command: "init"
+      };
+
+      var pavlovia_finish = {
+          type: "pavlovia",
+          command: "finish"
+      };
+
+      var start_response_listener = function(choices) {
+        response.key = null;
+        if(JSON.stringify(choices) != JSON.stringify(["none"])) {
+          var keyboardListener = jsPsych.pluginAPI.getKeyboardResponse({
+            callback_function: after_response,
+            valid_responses: choices,
+            rt_method: 'performance',
+            persist: false,
+            allow_held_key: false,
+          })
+        }
+      }
+
+
+      var fixation_duration = 1500;
+      var stim_duration = 6000;
+      var outcome_duration = 1000;
+
+      var fixation = {
+        type:'html-keyboard-response',
+        stimulus: '<p style="font-size: 60px; font-family: monospace;">+</p>',
+        choices: jsPsych.NO_KEYS,
+        trial_duration: fixation_duration
+      };
+
+      var fixation_big = {
+        type:'html-keyboard-response',
+        stimulus: '<p style="font-size: 150px; font-family: monospace;">+</p>',
+        choices: jsPsych.NO_KEYS,
+        trial_duration: fixation_duration
+      };
+
+      var first_stim = {
+        type:'image-keyboard-response',
+        stimulus: jsPsych.timelineVariable('first_stim'),
+        choices: ['c', 'a'],
+        trial_duration: stim_duration,
+        response_ends_trial: true,
+        prompt: "<p style='font-size: 38px;'>Do you think you will win? Press <b>RIGHT for yes</b> and <b>LEFT for no.</b></p>",
+      };
+
+      var second_stim = {
+        type:'image-keyboard-response',
+        stimulus: jsPsych.timelineVariable('second_stim'),
+        choices: ['c', 'a'],
+        trial_duration: stim_duration,
+        response_ends_trial: true,
+        prompt: "<p style='font-size: 38px;'>Do you think you will win? Press <b>RIGHT for yes</b> and <b>LEFT for no.</b></p>",
+      };
+
+      var outcome = {
+        type:'image-keyboard-response',
+        stimulus: jsPsych.timelineVariable('outcome'),
+        choices: jsPsych.NO_KEYS,
+        trial_duration: outcome_duration,
+      };
+
+      var practice = {
+        timeline: [first_stim, fixation, second_stim, fixation, outcome, fixation_big],
+        timeline_variables: practice_stimuli,
+        randomize_order: true
+      };
+
+
+      var timeline = [];
+  //    timeline.push(pavlovia_init);
+      timeline.push(demographics_block);
+      timeline.push(welcome_block);
+      timeline.push(instructions_block);
+      timeline.push(practice);
+      timeline.push(completion_block);
+      //    timeline.push(pavlovia_finish);
+
+
+
+
+    jsPsych.init({
+        timeline: timeline,
+        preload_images: task_images,
+        on_close: function(){
+      jsPsych.data.get().localSave('csv','animal.weapon.practice.csv')},
+        on_finish: function() {
+            jsPsych.data.get().localSave('csv','animal.weapon.practice.csv')}
+    });
+
+    </script>
+</html>
