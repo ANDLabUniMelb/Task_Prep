@@ -1,7 +1,6 @@
 var prompt = {
     type: 'html-button-response',
-    stimulus: '<p style="text-align:center; font-size:24px"><b>STAIY</b>' +
-    '<p style="text-align:center; font-size:24px">A number of statements which people have used to describe themselves are given below.</p>' +
+    stimulus: '<p style="text-align:center; font-size:24px">A number of statements which people have used to describe themselves are given below.</p>' +
         '<p style="text-align:center; font-size:24px">Read each statement and then choose the appropriate response to indicate how you feel right now, that is, <b>at this moment</b>.</p>' +
         '<p style="text-align:center; font-size:24px">There are no right or wrong answers.</p>',
 		choices: ['Continue']

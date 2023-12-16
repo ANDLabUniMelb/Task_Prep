@@ -1,17 +1,18 @@
 var prompt = {
 	type: 'html-button-response',
-	stimulus: '<p style="text-align:center; font-size:24px"><b>PSQI</b>' +
-    '<p style="text-align:center; font-size:24px"> The following questions relate to your usual sleep habits during <b> the past month only</b>.</p>' +
+	stimulus: '<p style="text-align:center; font-size:24px"> The following questions relate to your usual sleep habits <b>during the past month only</b>.</p>' +
 		'<p style="text-align:center; font-size:24px"> Your answers should indicate the most accurate reply for the majority of days and nights in the past month.</p>',
 		choices: ['Continue']
 };
 
 var questions1 = [
-    {prompt: '<p style="text-align:center; font-size:24px"><br>During the past month, when have you usually gone to bed at night? (HHMM)'},
+    {prompt: '<p style="text-align:center; font-size:24px"><br>During the past month, when have you usually gone to bed at night?' +
+    '<p style="text-align:center; font-size:24px"> (HHMM, 24 hour time. For example, 10pm is 2200.)'},
 
     {prompt: '<p style="text-align:center; font-size:24px">During the past month, how long has it usually take you to fall asleep each night? (In minutes)'},
 
-    {prompt: '<p style="text-align:center; font-size:24px">During the past month, when have you usually gotten up in the morning? (HHMM)'},
+    {prompt: '<p style="text-align:center; font-size:24px">During the past month, when have you usually gotten up in the morning?'+
+    '<p style="text-align:center; font-size:24px">(HHMM, 24 hour time. For example, 9am is 0900.)'},
 
     {prompt: '<p style="text-align:center; font-size:24px">During the past month, how many hours of actual sleep did you get at night?' +
 	'<p style="text-align:center; font-size:24px">(This may be different than the number of hours you spend in bed.)'},
@@ -129,7 +130,7 @@ var questions3 = [
     ],
     randomize_option_order: false},
 
-    {prompt: '<p style="text-align:center; font-size:24px">During the past month, how often have you taken medicine (prescribed or “over the counter") to help you sleep?',
+    {prompt: '<p style="text-align:center; font-size:24px">During the past month, how often have you taken medicine (prescribed or "over the counter") to help you sleep?',
     name: "PSQI11",
     labels: [
     "Not during the past month",

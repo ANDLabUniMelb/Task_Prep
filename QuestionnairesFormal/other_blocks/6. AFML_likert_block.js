@@ -1,7 +1,6 @@
 var prompt = {
 	type: 'html-button-response',
-	stimulus: '<p style="text-align:center; font-size:24px"><b>AFML</b>' +
-	'<p style="text-align:center; font-size:24px">Rate each item on a 5-point Likert-scale ranging from "Strongly disagree" to "Strongly agree".</p>',
+	stimulus: '<p style="text-align:center; font-size:24px">Rate each item on a 5-point Likert-scale ranging from "Strongly disagree" to "Strongly agree".</p>',
 	choices: ['Continue']
 };
 

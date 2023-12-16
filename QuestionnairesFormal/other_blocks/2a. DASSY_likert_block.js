@@ -1,7 +1,6 @@
 var prompt = {
 	type: 'html-button-response',
-	stimulus: '<p style="text-align:center; font-size:24px"><b>DASSY</b>' +
-		'<p style="text-align:center; font-size:24px"> We would like to find out how you have been feeling <b>in the past week</b>.</p>' +
+	stimulus: '<p style="text-align:center; font-size:24px"> We would like to find out how you have been feeling <b>in the past week</b>.</p>' +
 		'<p style="text-align:center; font-size:24px"> There are some sentences below.</p>' +
 		'<p style="text-align:center; font-size:24px"> Please select the statement which best shows how true each sentence was of you during the past week.</p>' +
 		'<p style="text-align:center; font-size:24px"> There are no right or wrong answers. </p>',
@@ -18,68 +17,88 @@ var scale = [
 var questions = [
 	{prompt: '<p style="text-align:center; font-size:24px"><b>In the past week...</b></p><br>'+
 	'<p style="text-align:center; font-size:24px">I got upset about little things.</p>',
-	name: 'DASS1',
-	labels: scale },
+	name: 'DASSY1',
+	labels: scale},
 
 	{prompt: '<p style="text-align:center; font-size:24px">I felt dizzy, like I was about to faint.</p>',
-	name: 'DASS2',
-	labels: scale },
+	name: 'DASSY2',
+	labels: scale},
 
 	{prompt: '<p style="text-align:center; font-size:24px">I did not enjoy anything.</p>',
-	name: 'DASS3',
-	labels: scale },
+	name: 'DASSY3',
+	labels: scale},
 
 	{prompt: '<p style="text-align:center; font-size:24px">I had trouble breathing (e.g. fast breathing), even though I wasn\'t exercising and I was not sick.</p>',
-	name: 'DASS4',
-	labels: scale },
+	name: 'DASSY4',
+	labels: scale},
 
 	{prompt: '<p style="text-align:center; font-size:24px">I hated my life.</p>',
-	name: 'DASS5',
-	labels: scale },
+	name: 'DASSY5',
+	labels: scale},
 
 	{prompt: '<p style="text-align:center; font-size:24px">I found myself over-reacting to situations.</p>',
-	name: 'DASS6',
-	labels: scale },
+	name: 'DASSY6',
+	labels: scale},
 
 	{prompt: '<p style="text-align:center; font-size:24px">My hands felt shaky.</p>',
-	name: 'DASS7',
-	labels: scale },
+	name: 'DASSY7',
+	labels: scale},
 
 	{prompt: '<p style="text-align:center; font-size:24px">I was stressing about lots of things.</p>',
-	name: 'DASS8',
-	labels: scale },
+	name: 'DASSY8',
+	labels: scale},
 
 	{prompt: '<p style="text-align:center; font-size:24px">I felt terrified.</p>',
-	name: 'DASS9',
-	labels: scale },
+	name: 'DASSY9',
+	labels: scale},
 
 	{prompt: '<p style="text-align:center; font-size:24px">There was nothing nice I could look forward to.</p>',
-	name: 'DASS10',
-	labels: scale },
+	name: 'DASSY10',
+	labels: scale},
 
 	{prompt: '<p style="text-align:center; font-size:24px">I was easily irritated.</p>',
-	name: 'DASS11',
-	labels: scale },
+	name: 'DASSY11',
+	labels: scale},
 
 	{prompt: '<p style="text-align:center; font-size:24px">I found it difficult to relax.</p>',
-	name: 'DASS12',
-	labels: scale },
+	name: 'DASSY12',
+	labels: scale},
 
 	{prompt: '<p style="text-align:center; font-size:24px">I could not stop feeling sad.</p>',
-	name: 'DASS13',
-	labels: scale },
+	name: 'DASSY13',
+	labels: scale},
 
 	{prompt: '<p style="text-align:center; font-size:24px">I got annoyed when people interrupted me.</p>',
-	name: 'DASS14',
-	labels: scale },
+	name: 'DASSY14',
+	labels: scale},
 
 	{prompt: '<p style="text-align:center; font-size:24px">I felt like I was about to panic.</p>',
-	name: 'DASS15',
-	labels: scale },
+	name: 'DASSY15',
+	labels: scale},
 
 	{prompt: '<p style="text-align:center; font-size:24px">I hated myself.</p>',
-	name: 'DASS16',
-	labels: scale }
+	name: 'DASSY16',
+	labels: scale},
+
+	{prompt: '<p style="text-align:center; font-size:24px">I felt like I was no good.</p>',
+	name: 'DASSY17',
+	labels: scale},
+
+	{prompt: '<p style="text-align:center; font-size:24px">I was easily annoyed.</p>',
+	name: 'DASSY18',
+	labels: scale},
+
+	{prompt: '<p style="text-align:center; font-size:24px">I could feel my heart beating really fast, even though I had\'t done any hard exercise.</p>',
+	name: 'DASSY19',
+	labels: scale},
+
+	{prompt: '<p style="text-align:center; font-size:24px">I felt scared for no good reason.</p>',
+	name: 'DASSY20',
+	labels: scale},
+
+	{prompt: '<p style="text-align:center; font-size:24px">I felt that life was terrible.</p>',
+	name: 'DASSY21',
+	labels: scale}
 	];
 
 questions.forEach(function(question) {

@@ -1,7 +1,6 @@
 var prompt = {
 	type: 'html-button-response',
-	stimulus: '<p style="text-align:center; font-size:24px"><b>PTQ</b>' +
-	'<p style="text-align:center; font-size:24px">In this questionnaire, you will be asked to describe how you <b>typically</b> think about negative experiences or problems.' +
+	stimulus: '<p style="text-align:center; font-size:24px">In this questionnaire, you will be asked to describe how you <b>typically</b> think about negative experiences or problems.' +
 		'<p style="text-align:center; font-size:24px">Please read the following statements and rate the extent to which they apply to you when you think about negative experiences or problems.</p>',
 		choices: ['Continue']
 };

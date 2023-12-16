@@ -1,7 +1,6 @@
 var prompt = {
     type: 'html-button-response',
-    stimulus: '<p style="text-align:center; font-size:24px"><b>SCARED</b>' +
-    '<p style="text-align:center; font-size:24px">Below is a list of sentences that describe how people feel.</p>'+
+    stimulus: '<p style="text-align:center; font-size:24px">Below is a list of sentences that describe how people feel.</p>'+
     '<p style="text-align:center; font-size:24px">Read each phase and decide if it is "Not true or hardly ever true" or "Somewhat true or sometimes true" or "Very true or often true" for you.</p>'+
     '<p style="text-align:center; font-size:24px">For each sentence, please choose the answer that corresponds to the response that seems to describe you <b>for the last 3 months</b>.</p>',
     choices: ['Continue']
@@ -54,7 +53,7 @@ var questions = [
     {prompt: '<p style="text-align:center; font-size:24px">I worry about things that have already happened.</p>', name: 'SCARED37', labels: scale},
     {prompt: '<p style="text-align:center; font-size:24px">When I get frightened, I feel dizzy.</p>', name: 'SCARED38', labels: scale},
     {prompt: '<p style="text-align:center; font-size:24px">I feel nervous when I am with other children or adults and I have to do something while they watch me (for example: read aloud, speak, play a game, play a sport).</p>', name: 'SCARED39', labels: scale},
-    {prompt: '<p style="text-align:center; font-size:24px">I feel nervous when I am going to parties, dances, or any place where there will be people that I don’t know well.</p>', name: 'SCARED40', labels: scale},
+    {prompt: '<p style="text-align:center; font-size:24px">I feel nervous when I am going to parties, dances, or any place where there will be people that I don\'t know well.</p>', name: 'SCARED40', labels: scale},
     {prompt: '<p style="text-align:center; font-size:24px">I am shy.</p>', name: 'SCARED41', labels: scale},
 ];
 

@@ -1,7 +1,6 @@
 var prompt = {
     type: 'html-button-response',
-	  stimulus: '<p style="text-align:center; font-size:24px"><b>DASS21</b>' +
-        '<p style="font-size:24px">Please read each statement and decide how much it applies to you <b>in general</b>.</p>' +
+	  stimulus: '<p style="font-size:24px">Please read each statement and decide how much it applies to you <b>in general</b>.</p>' +
         '<p style="font-size:24px"> There are no right or wrong answers.</p>'+
         '<p style="font-size:24px"> Do not spend too much time on any statement.</p>',
         choices: ['Continue']

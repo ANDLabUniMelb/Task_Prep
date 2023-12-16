@@ -21,8 +21,8 @@ var demographics1 = {
 var questions2 = [
     {prompt: '<p style="text-align:center; font-size:24px"><br>How old are you?'},
     {prompt: '<p style="text-align:center; font-size:24px">What is your date of birth? (YYYYMMDD)'},
-    {prompt: '<p style="text-align:center; font-size:24px">What is your current height? (CM)'},
-    {prompt: '<p style="text-align:center; font-size:24px">What is your current weight? (KG)'},
+    {prompt: '<p style="text-align:center; font-size:24px">What is your current height? (cm)'},
+    {prompt: '<p style="text-align:center; font-size:24px">What is your current weight? (kg)'},
     {prompt: '<p style="text-align:center; font-size:24px">How many hours do you exercise per week?'},
 ];
 
@@ -205,7 +205,11 @@ on_finish: function(data){
 
     var age = staticAge;
     var sex = staticSex;
-
+    // var pavlovia_finish = {
+    //     type: "pavlovia",
+    //     command: "finish"
+    //   };
+      
 
     newTimeline = [];
 
@@ -252,6 +256,7 @@ on_finish: function(data){
             newTimeline.push(SSPDB_block); // 16a boys
         }
     }
+    // newTimeline.push(pavlovia_finish);
     newTimeline.push(completion_block);
     jsPsych.addNodeToEndOfTimeline({timeline: newTimeline});
        

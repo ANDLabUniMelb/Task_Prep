@@ -1,7 +1,6 @@
 var prompt = {
     type: 'html-button-response',
-    stimulus:'<p style="text-align:center; font-size:24px"><b>DERS</b>' +
-    '<p style="text-align:center; font-size:24px"> Please indicate how often the following apply to you. </p>',
+    stimulus: '<p style="text-align:center; font-size:24px"> Please indicate how often the following apply to you. </p>',
     choices: ['Continue']
 };
 

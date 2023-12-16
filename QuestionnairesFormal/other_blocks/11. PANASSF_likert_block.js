@@ -1,7 +1,6 @@
 var prompt = {
     type: 'html-button-response',
-    stimulus:	'<p style="text-align:center; font-size:24px"><b>PANASSF</b>' +
-    '<p style="text-align:center; font-size:24px">Indicate the extent you have felt this way <b>over the past week</b>.</p>',
+    stimulus:	'<p style="text-align:center; font-size:24px">Indicate the extent you have felt this way <b>over the past week</b>.</p>',
 		choices: ['Continue']
 };
 

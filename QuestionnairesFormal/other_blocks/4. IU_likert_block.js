@@ -1,7 +1,6 @@
 var prompt = {
 	type: 'html-button-response',
-	stimulus: '<p style="text-align:center; font-size:24px"><b>IU</b>' +
-	'<p style="text-align:center; font-size:24px">Please select the answer that best corresponds to how much you agree with each item.</p>',
+	stimulus: '<p style="text-align:center; font-size:24px">Please select the answer that best corresponds to how much you agree with each item.</p>',
 	choices: ['Continue']
 };
 

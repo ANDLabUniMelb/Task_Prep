@@ -1,7 +1,6 @@
 var prompt = {
 	type: 'html-button-response',
-	stimulus: '<p style="text-align:center; font-size:24px"><b>SSPDB</b>' +
-	'<p style="text-align:center; font-size:24px"> The next questions are about changes that may be happening to your body.</p>' +
+	stimulus: '<p style="text-align:center; font-size:24px"> The next questions are about changes that may be happening to your body.</p>' +
 		'<p style="text-align:center; font-size:24px"> These changes normally happen to different young people at different ages.</p>'+
 		'<p style="text-align:center; font-size:24px"> For each question, please choose the answer that best describes what is happening to you.</p>',
 		choices: ['Continue']
@@ -10,7 +9,7 @@ var prompt = {
 var questions = [
 	{prompt: '<p style="text-align:center; font-size:24px">Would you say that your growth in height:</p>'+
 	'<p style="text-align:center; font-size:24px">("Spurt" means more growth than usual)</p>',
-	name: 'SDPPB1',
+	name: 'SSPDB1',
 	labels: [
 		"Has not yet begun to spurt",
 		"Has barely started",
@@ -19,8 +18,8 @@ var questions = [
 	]},
 
 	{prompt: '<p style="text-align:center; font-size:24px">Would you say that your body hair growth:</p>'+
-    '<p style="text-align:center; font-size:24px">("Body hair" means hair any place other than your head, such as under your arms.)</p>',
-	name: 'SDPPB2',
+    '<p style="text-align:center; font-size:24px">("Body hair" means underarm and pubic hair.)</p>',
+	name: 'SSPDB2',
 	labels: [
 		"Not yet started growing",
 		"Has barely started growing",
@@ -29,7 +28,7 @@ var questions = [
 	]},
 
 	{prompt: '<p style="text-align:center; font-size:24px">Have you noticed any skin changes, especially pimples?</p>',
-	name: 'SDPPB3',
+	name: 'SSPDB3',
 	labels: [
 		"Not yet started showing changes",
     	"Have barely started showing changes",
@@ -38,7 +37,7 @@ var questions = [
 	]},
 
 	{prompt: '<p style="text-align:center; font-size:24px">Have you noticed a deepening of your voice?</p>',
-	name: 'SDPPB4',
+	name: 'SSPDB4',
 	labels: [
 		"Not yet started changing",
     	"Have barely started changing",
@@ -47,7 +46,7 @@ var questions = [
 	]},
 
 	{prompt: '<p style="text-align:center; font-size:24px">Have you begun to grow hair on your face?</p>',
-	name: 'SDPPB5',
+	name: 'SSPDB5',
 	labels: [
 		"Not yet started growing hair",
     	"Has barely started growing hair",
@@ -55,7 +54,7 @@ var questions = [
     	"Facial hair growth seems completed",
 	]},
 	{prompt: '<p style="text-align:center; font-size:24px">Do you think your development is any earlier or later than most other boys your age?</p>',
-	name: 'SDPPG6',
+	name: 'SSPDG6',
 	labels: [
 		"Much earlier",
 		"Somewhat earlier",

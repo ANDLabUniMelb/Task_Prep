@@ -1,7 +1,6 @@
 var prompt = {
 	type: 'html-button-response',
-	stimulus:'<p style="text-align:center; font-size:24px"><b>BISBAS</b>' +
-	'<p style="text-align:center; font-size:24px"> Each item of this questionnaire is a statement that a person may either agree with or disagree with.</p>' +
+	stimulus: '<p style="text-align:center; font-size:24px"> Each item of this questionnaire is a statement that a person may either agree with or disagree with.</p>' +
 		'<p style="text-align:center; font-size:24px">For each item, indicate how much you agree or disagree with what the item says. </p>' +
 		'<p style="text-align:center; font-size:24px">Please be as accurate and honest as you can be. </p>' +
 		'<p style="text-align:center; font-size:24px">Respond to each item as if it were the only item. That is, don\'t worry about being "consistent" in your responses. </p>',
@@ -88,7 +87,7 @@ var questions = [
 	name: 'BISBAS18', 
 	labels: scale},
 
-	{prompt: '<p style="text-align:center; font-size:24px">I feel worried when I think I have done poorly at something.',
+	{prompt: '<p style="text-align:center; font-size:24px">I feel worried when I think I have done poorly at something important.',
 	name: 'BISBAS19', 
 	labels: scale},
 

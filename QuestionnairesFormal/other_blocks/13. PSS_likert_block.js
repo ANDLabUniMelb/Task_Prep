@@ -1,7 +1,6 @@
 var prompt = {
 	type: 'html-button-response',
-	stimulus: '<p style="text-align:center; font-size:24px"><b>PSS</b>' +
-	'<p style="text-align:center; font-size:24px">The questions in this scale ask about your feelings and thoughts <b>during the last month</b>.</p>' +
+	stimulus: '<p style="text-align:center; font-size:24px">The questions in this scale ask about your feelings and thoughts <b>during the last month</b>.</p>' +
 	'<p style="text-align:center; font-size:24px">You will be asked to indicate how often you felt or thought a certain way.</p>' +
 	'<p style="text-align:center; font-size:24px">Although some of the questions are similar, there are differences between them and you should treat each one as a separate question.</p>' +
 	'<p style="text-align:center; font-size:24px">The best approach is to answer fairly quickly.</p>' +

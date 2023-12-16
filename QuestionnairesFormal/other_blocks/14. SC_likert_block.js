@@ -1,7 +1,6 @@
 var prompt = {
 	type: 'html-button-response',
-	stimulus: '<p style="text-align:center; font-size:24px"><b>SC</b>' +
-	'<p style="text-align:center; font-size:24px">Please choose your answer below.</p>',
+	stimulus: '<p style="text-align:center; font-size:24px">Please choose your answer below.</p>',
 	choices: ['Continue']
   };
 

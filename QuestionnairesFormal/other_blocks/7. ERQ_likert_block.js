@@ -1,7 +1,6 @@
 var prompt = {
 	type: 'html-button-response',
-	stimulus:'<p style="text-align:center; font-size:24px"><b>ERQ</b>' +
-	'<p style="text-align:center; font-size:24px">We would like to ask you some questions about your emotional life, in particular, how you control (that is, regulate and manage) your emotions.</p>'+
+	stimulus: '<p style="text-align:center; font-size:24px">We would like to ask you some questions about your emotional life, in particular, how you control (that is, regulate and manage) your emotions.</p>'+
 	'<p style="text-align:center; font-size:24px">The questions below involve two distinct aspects of your emotional life.</p>'+
 	'<p style="text-align:center; font-size:24px">One is your emotional experience, or what you feel like inside.</p>'+
 	'<p style="text-align:center; font-size:24px">The other is your emotional expression, or how you show your emotions in the way you talk, gesture, or behave.</p>'+

@@ -1,7 +1,6 @@
 var prompt = {
     type: 'html-button-response',
-    stimulus:'<p style="text-align:center; font-size:24px"><b>GSE</b>' +
-    '<p style="text-align:center; font-size:24px">Please respond to the following statements using these response categories: "Not at all true", "Hardly true", "Moderately true", or "Exactly true".</p>',
+    stimulus: '<p style="text-align:center; font-size:24px">Please respond to the following statements using these response categories: "Not at all true", "Hardly true", "Moderately true", or "Exactly true".</p>',
     choices: ['Continue']
 };
 
